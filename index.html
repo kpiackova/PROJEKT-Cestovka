@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cestovka</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="Logo">
+        <nav class="header__navbar">
+            <ul class="menu">
+                <li class="menu__item"><a href="#last-minute" class="menu__link">Last minute</a></li>
+                <li class="menu__item"><a href="#destinace" class="menu__link">Destinace</a></li>
+                <li class="menu__item"><a href="#otazky" class="menu__link">Časté otázky</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="grid">
+               <div class="tour">
+            <img class="tour__image" src="./images/palmy.png">
+            <div class="tour__price">17 600 Kč</div>
+            <div class="tour__info">
+                <div class="tour__text">
+                    <h2 class="tour__title tour__title--big">Pohoda pod palmami</h2>
+                    <p class="tour__subtitle">Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+                </div>
+            </div>
+        </div>
+        <div class="tour">
+            <img class="tour__image" src="./images/jezero2.png">
+            <div class="tour__price">8 490 Kč</div>
+            <div class="tour__info">
+               <h2 class="tour__title">Klid u jezera</h2>
+            </div>
+        </div>
+        <div class="tour">
+            <img class="tour__image" src="./images/nakole.png">
+            <div class="tour__price">4 990 Kč</div>
+            <div class="tour__info">
+                <h2 class="tour__title">Výlet na kole</h2>  
+            </div>
+        </div>
+    </div>
+
+    <div class="card-wrapper">
+        <div class="card">
+            <div class="card__icon"> 
+                <img class="card__img" src="./images/map.svg">
+            </div>   
+            <div class="card__text">
+                <h3 class="card__title">Podpora na místě</h3>
+                <p class="card__description">V cílové destinaci jsou k dispozici naši delegáti, kteří vám vždy rádi poradí.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__icon"> 
+                <img class="card__img" src="./images/plane.svg">
+            </div>
+            <div class="card__text">
+                <h3 class="card__title">Služby na letišti</h3>
+                <p class="card__description">Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__icon"> 
+                <img class="card__img" src="./images/globe.svg">
+            </div>
+            <div class="card__text">
+                <h3 class="card__title">Do celého světa</h3>
+                <p class="card__description">Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__icon"> 
+                <img class="card__img" src="./images/shield.svg">
+            </div>
+            <div class="card__text">
+                <h3 class="card__title">Vaše bezpečí</h3>
+                <p class="card__description">Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <h2 class="section__title">Last minute zájezdy</h2>
+        <div class="grid grid--alt">
+            <div class="tour">
+                <img class="tour__image" src="./images/lodicka@2x.png">
+                <div class="tour__price">15 900 Kč</div>
+                <div class="tour__info">
+                    <div class="tour__text">
+                        <h2 class="tour__title tour__title--big">Romantika u horského jezera</h2>
+                        <p class="tour__subtitle">Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tour">
+                <img class="tour__image" src="./images/podkova.png">
+                <div class="tour__price">18 500 Kč</div>
+                <div class="tour__info">
+                <h2 class="tour__title">Grand Canyon</h2>
+                </div>
+            </div>
+            <div class="tour">
+                <img class="tour__image" src="./images/zatoka.png">
+                <div class="tour__price">8 900 Kč</div>
+                <div class="tour__info">
+                    <h2 class="tour__title">Pěšky po Kanárských ostrovech</h2>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section__title">Novinky</h2>
+    
+        <div class="news-wrapper">
+            <div class="news">
+                <div class="news__date">15. 8. 2020</div>   
+                <h3 class="news__title">Magický Zanzibar</h3>
+                <div class="news__description">Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře, exotická flóra i fauna.</div>
+            </div>
+            <div class="news">
+                <div class="news__date">31. 9. 2020</div>   
+                <h3 class="news__title">Návrat českých občanů ze zahraničí</h3>
+                <div class="news__description">Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření Ministerstva zdravotnictví ČR.</div>
+            </div>
+            <div class="news">
+                <div class="news__date">6. 10. 2020</div>   
+                <h3 class="news__title">Na Kubu s PCR testem</h3>
+                <div class="news__description">Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin před příletem do destinace.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__text">©2021, Czechitas</div>
+    </footer>
+</body>
+</html>

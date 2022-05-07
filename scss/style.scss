@@ -1,0 +1,252 @@
+/*Box-sizing*/
+html {
+    box-sizing: border-box;
+    }
+    *,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+/*Variables*/
+$font-title: 'Montserrat', sans-serif;
+$font-subtitle:'Open Sans', sans-serif;
+$c-primary: #F03000;
+$c-secondary: #888888;
+$c-card: #F0F0F0;
+
+/*CSS Style*/
+body {
+    font-family: $font-title;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+
+    &__logo {
+        margin: 30px auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+
+        &__logo {
+            margin: 0;
+        }
+    }
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    &__link {
+        display: inline-block;
+        color: $c-primary;
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 20px;
+    }
+
+    &__link:hover {
+        background-color: $c-primary;
+        color: white;
+    } 
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 240px;
+    grid-auto-rows: 150px;
+    grid-auto-flow: dense;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: unset;
+        grid-auto-rows: 180px;
+        
+        > :first-child {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 180px;
+
+        > :first-child {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    }
+}
+
+.tour {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+   
+    &__title {
+        color: white;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    &__title--big {
+        font-size: 28px;
+    }
+
+    &__subtitle {
+        margin-bottom: 0;
+        color: white;
+    }
+
+    &__price {
+        width: fit-content;
+        background-color: $c-primary;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    &__info {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+        padding: 20px;
+    }
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+.card {
+    background-color: $c-card;
+    display: flex;
+    min-height: 118px;
+            
+    &__text {
+        flex: 0 0 1;    
+    }
+
+    &__title {
+        color: $c-primary;
+        margin: 20px 0 10px 0;
+    }
+
+    &__description {
+        font-family: $font-subtitle;
+        margin: 0 10px 10px 0;
+    }
+
+    &__icon {
+        flex: 0 0 auto;
+        margin-top: 20px;
+        display: flex;
+        width: 90px;
+        justify-content: center;
+    }
+
+    &__img {
+        height: 40px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        flex: 1 1 48%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+       
+        &__title {
+            margin: 20px;
+        }
+        
+        &__description {
+            margin: 20px;
+        }     
+    }
+
+    @media screen and (min-width: 960px) {
+        flex: 1 1 22%;
+    }
+}
+
+.grid--alt > :first-child {
+    @media screen and (min-width: 960px) {
+        grid-column: 2 / span 2;
+    }
+}
+
+.section {
+    margin-top: 40px;
+
+    &__title {
+        color: black;
+        font-weight: 600;
+    }
+}  
+
+.news-wrapper {
+    @media screen and (min-width: 960px) {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.news {
+    background-color: $c-card;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    &__date {
+        color: $c-secondary;
+    }
+
+    &__title {
+        font-size: 16px;
+        color: $c-primary;
+        margin: 10px 0;
+    }
+   
+    @media screen and (min-width: 960px) {
+        flex: 1 1 33%;
+    }   
+}
+
+.footer {
+    background-color: #444444;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
